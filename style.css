@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.main {
+    overflow: hidden;
+}
+
+
+/* All The Buttons */
+
+button {
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-notif {
+    background-color: #007bc1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-banner {
+    background-color: transparent;
+    padding: 15px 25px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 20px 0;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.btn-banner:hover {
+    background-color: white;
+    color: #007bc1;
+}
+
+.btn-news {
+    background-color: #ff8000;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Notif Panel */
+
+.notif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    min-height: 10vh;
+    width: 100%;
+}
+
+.notif-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 720px;
+    padding: 15px 20px;
+}
+
+.notif-text {
+    width: 80%;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.notif-link {
+    text-decoration: none;
+}
+
+.notif-button {
+    width: 20%;
+}
+
+/* Hero Section */
+
+.hero {
+    background-image: url('./assets/banner.jpg');
+    background-size: cover;
+    min-height: 90vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 123, 193, 0.5);
+    background-color: rgba(5, 3, 40, 0.7);
+    background-color: rgba(1, 57, 90, 0.7);
+}
+
+.hero-logo img {
+    width: 70px;
+    padding: 20px 0 0 20px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 15vh;
+    opacity: 1;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    color: white;
+    font-weight: 300;
+}
+
+.hero-text h3 {
+    font-size: 34px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 5px 0;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: white;
+    padding: 5px 0;
+    font-weight: 200;
+    line-height: 30px;
+}
+
+/* Highlight Section */
+
+.highlight {
+    background-color: #e5e5e5;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.highlight-header {
+    text-align: center;
+}
+
+.highlight-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    padding: 10px 0;
+    color: rgb(95, 95, 95);
+}
+
+.highlight-header p {
+    padding: 5px 0;
+    line-height: 22px;
+    color: grey;
+}
+
+.highlight-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 25px 0;
+    justify-content: center;
+}
+
+.card {
+    width: 30%;
+    margin: 12px 10px;
+    padding: 20px 10px;
+    border: 0.7px solid rgb(196, 196, 196);
+    border-radius: 2px;
+}
+
+.card-header {
+    display: flex;
+    padding: 0 5px;
+    justify-content: space-between;
+}
+
+.card-header h3 {
+    justify-content: flex-start;
+    color: rgb(95, 95, 95);
+}
+
+.card-header i {
+    justify-content: flex-end;
+    font-size: 20px;
+    color: grey;
+}
+
+.card-desc {
+    padding: 0 5px;
+    padding-top: 10px;
+    font-size: 15px;
+    line-height: 20px;
+    color: grey;
+}
+
+/* Footer Section */
+
+.footer {
+    background-color: rgb(5, 3, 40);
+    padding: 20px 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+
+/* News Section */
+
+.news {
+    position: absolute;
+    bottom: -100;
+    left: 0;
+    background-color: #007bc1;
+    opacity: 0.9;
+    color: white;
+    width: 40%;
+    z-index: 4;
+}
+
+.news-panel {
+    padding: 25px;
+    width: 100%;
+    position: relative;
+}
+
+.news-panel h3 {
+    padding-top: 10px;
+}
+
+.news-panel p {
+    font-size: 14px;
+    padding: 15px 0 20px 0;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+.news-panel span {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.news-panel input {
+    padding: 5px 10px;
+    width: 65%;
+    margin-right: 5px;
+    border: none;
+}
+
+
+.notif-close {
+    transform: translateY(-200px);
+    transition: ease 2s;
+    position: fixed;
+}
+
+.news-close {
+    transform: translateY(800px);
+    transition: all 3s;
+}
+
+.news-show {
+    transform: translateY(-200px);
+    transition: all 3s;
+}
+
+
+@media all and (max-width: 960px) {
+    .highlight-header {
+        width: 90%;
+    }
+
+    .highlight-header h1 {
+        margin-top: 50px;
+    }
+
+    .highlight-cards {
+        width: 90%;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    .news {
+        width: 50%;
+    }
+
+}
+
+@media all and (max-width: 480px) {
+
+    /* Notif Section */
+
+    .notif-panel {
+        width: 100%;
+        display: block;
+    }
+
+    .notif-text {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .notif-button {
+        margin-top: 10px;
+    }
+
+    /* Hero Section */
+
+    .hero-text h1 {
+        font-size: 34px;
+    }
+
+    .hero-text h3 {
+        font-size: 30px;
+        letter-spacing: 1px;
+        padding: 5px 0;
+    }
+
+    .hero-text p {
+        line-height: 25px;
+    }
+
+    /* Highlight Section */
+
+    .highlight-header {
+        width: 90%;
+    }
+
+    .highlight-header h1 {
+        margin-top: 50px;
+    }
+
+    .highlight-cards {
+        width: 85%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card:nth-last-child(1) {
+        margin-bottom: 100px;
+    }
+
+    /* News Section */
+
+    .news {
+        width: 100%;
+    }
+
+    .news-panel input {
+        width: 100%;
+    }
+
+    .btn-news {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .news-show {
+        transform: translateY(-270px);
+        transition: all 3s;
+    }
+
+}
